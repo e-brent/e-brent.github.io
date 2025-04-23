@@ -34,7 +34,7 @@ body {
     line-height: 1.5;
 
     color:  #4c2719; /* font color -- 2nd darkest brown */
-    background-color: #dbe5cc; /* backgrounc color -- light green */
+    background-color: #dbe5cc; /* background color -- light green */
 
     /*padding-left: 5rem;
     padding-right: 5rem;
@@ -59,17 +59,34 @@ header {
     margin: 0;
     text-align: left;
     color: #94ADB8;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: "goodlife-sans-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .main-nav {
-    display: inline;
+    display: inline-block;
     padding-left: 4rem;
+    /*display: flex;
+    flex-direction: column;*/
     text-align: center;
+    width: fit-content;
+}
+
+.main-nav > a {
+    font-size: 1.7rem;
+    height: fit-content;
+}
+
+.main-nav > a > div > img {
+    height: 30px;
+    margin: 0;
 }
 
 .main-nav:hover {
     text-decoration: underline;
+    text-decoration-thickness: 0.15rem;
 }
 
 a {
@@ -114,14 +131,20 @@ a {
 }
 
 .intro-text > p {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #06212D;
+    font-family: "goodlife-sans-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .intro-text > h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #06212D;
+    font-family: "goodlife-brush", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 #intro-image {
@@ -193,8 +216,15 @@ a {
 
 }
 
+.project-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .project-image {
-    max-width: 40%;
+    max-width: 30%;
     max-height: 30%;
     margin: 1rem;
     border-radius: 1rem;
@@ -212,4 +242,18 @@ a {
     padding: 0.5rem;
     border-radius: 1rem;
     font-size: 0.8rem;
+}
+
+.project-link {
+    display: flex;
+    color: #06212D;
+    /*font-size: 2rem;
+    font-family: "goodlife-sans-condensed", sans-serif;*/
+    font-weight: 400;
+    font-style: normal;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.15rem;
 }
