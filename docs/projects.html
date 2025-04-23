@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/sog5chp.css">
     
         <!-- doesn't disable viewport zooming for accessiblity reasons, and allows zoom in/out on iOS9 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -25,13 +26,28 @@
             <nav>
                 <ul>
                     <li class="main-nav">
-                        <a href="./index.html"> Home </a>
+                        <a href="./index.html"> 
+                            <div>
+                                <img class="icon" src="./icons/home.png" alt="Home icon">
+                                <p>Home</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="main-nav">
-                        <a href="./projects.html"> Projects </a>
+                        <a href="./projects.html"> 
+                            <div>
+                                <img class="icon" src="./icons/projects.png" alt="Home icon">
+                                <p>Projects</p> 
+                            </div>
+                        </a>
                     </li>
                     <li class="main-nav">
-                        <a href="./contact.html"> Contact </a>
+                        <a href="./contact.html">
+                            <div>
+                                <img class="icon" src="./icons/contact.png" alt="Home icon">
+                                <p>Contact</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -47,18 +63,27 @@
                 <li class="project-category">Graphic Design</li>
                 <li class="project-category">Writing</li>
             </ul>
-            <img class="project-image" src="./project-images/dcsa_pamphlet1.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. The cover says 'Foreign Intelligence Threats via Social Media', and the back has the Defense Counterintelligence and Security Agency logo.">
-            <img class="project-image" src="./project-images/dcsa_pamphlet2.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. Each column contains information related to 'Foreign Intelligence Threats via Social Media.'">
-            <p class="project-summary">Produced counterintelligence awareness and reporting educational pamphlets using Adobe InDesign and Adobe Illustrator for over one million federal employees. Initiated improved language effectiveness and cohesion across 15 pamphlets and Industry Best Practices booklet. Constructed briefings and led meetings with directorate and agency leadership to communicate project progress and outcomes.</p>
+
+            <section class="project-images">
+                <img class="project-image" src="./project-images/dcsa_pamphlet1.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. The cover says 'Foreign Intelligence Threats via Social Media', and the back has the Defense Counterintelligence and Security Agency logo.">
+                <img class="project-image" src="./project-images/dcsa_pamphlet2.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. Each column contains information related to 'Foreign Intelligence Threats via Social Media.'">    
+            </section>
+            
+            <p class="project-summary">For this project, I was tasked with re-designing the Counterintelligence Awareness and Reporting trifold pamphlets for the Defense Counterintelligence and Security Agency. These pamphlets are distributed to the trusted workforce to provide education on how and why they may be targeted by foreign adversaries, and what they are responsible for reporting. There were originally 13 pamphlets I was assigned to work on.</p>
+            <p class="project-summary">As I began this project and started trying to create updated layouts for the pamphlets, I noticed the lack of consistency across pamphlets, and ways that the information could be conveyed more clearly. I was able to work with other members of the production team to create standardized section headings and rewrite the pamphlets to create a stronger overall product series.</p>
+            <p class="project-summary">Along with the content of the pamphlets, I created updated layouts, graphics, added new images, and updated the color scheme to align with DCSA branding. During this time, two additional pamphlets of new topics were added for a total of 15.</p>
+            <p class="project-summary">The final portion of this project was to update the Counterintelligence Best Practices for Industry booklet. This booklet contains the same content as the pamphlets, but it is designed for upper level leadership and does not have to follow branding guidelines as closely. For this, I spoke with other members of the design team to match the theme of the booklet with other products the division was working on.</p>
+
             <ul class="project-skills">
                 <li class="project-skill">Adobe InDesign</li>
                 <li class="project-skill">Adobe Illustrator</li>
                 <li class="project-skill">Technical Writing</li>
             </ul>
+
             <a class="project-link" href="https://www.dcsa.mil/Counterintelligence-Insider-Threat/">Link to pamphlet files</a>
         </section>
 
-        <section class="project">
+    <!-- <section class="project">
             <h3 class="project-title">Mercury Stereo Toolkit App</h3>
             <p class="project-date-class"><strong>January 2024 - December 2024</strong> | Mercury Camera Internship</p>
             <ul class="project-categories">
@@ -66,9 +91,12 @@
                 <li class="project-category">App Development</li>
             </ul>
         <!--
-            <img class="project-image" src="./project-images/dcsa_pamphlet1.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. The cover says 'Foreign Intelligence Threats via Social Media', and the back has the Defense Counterintelligence and Security Agency logo.">
-            <img class="project-image" src="./project-images/dcsa_pamphlet2.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. Each column contains information related to 'Foreign Intelligence Threats via Social Media.'">
-        -->
+            <section class="project-images">
+                <img class="project-image" src="./project-images/dcsa_pamphlet1.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. The cover says 'Foreign Intelligence Threats via Social Media', and the back has the Defense Counterintelligence and Security Agency logo.">
+                <img class="project-image" src="./project-images/dcsa_pamphlet2.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. Each column contains information related to 'Foreign Intelligence Threats via Social Media.'">
+            </section>
+
+                -- >
             <p class="project-summary">Developed a cross-platform mobile app using the Expo framework for ReactNative to assist users in determining and understanding 3-D stereo camera settings while in the field. Created internal documentation in support of the app publication process and future product updates.</p>
             <ul class="project-skills">
                 <li class="project-skill">JavaScript</li>
@@ -77,24 +105,69 @@
             </ul>
             <a class="project-link" href="https://github.com/e-brent/Mercury-Mobile-App">Link to GitHub repository</a>
         </section>
+    -->
 
         <section class="project">
-            <h3 class="project-title">Mercury Stereo Toolkit App</h3>
-            <p class="project-date-class"><strong>January 2024 - December 2024</strong> | Mercury Camera Internship</p>
+            <h3 class="project-title">Steel City Gardening</h3>
+            <p class="project-date-class"><strong>January 2024 - May 2024</strong> | Digital Narrative and Interactive Design English Capstone</p>
             <ul class="project-categories">
-                <li class="project-category">Coding</li>
-                <li class="project-category">App Development</li>
+                <li class="project-category">Graphic Design</li>
+                <li class="project-category">Web Development</li>
             </ul>
-        <!--
-            <img class="project-image" src="./project-images/dcsa_pamphlet1.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. The cover says 'Foreign Intelligence Threats via Social Media', and the back has the Defense Counterintelligence and Security Agency logo.">
-            <img class="project-image" src="./project-images/dcsa_pamphlet2.png" alt="One side of a piece of paper, designed to be folded into a trifold pamphlet. Each column contains information related to 'Foreign Intelligence Threats via Social Media.'">
-        -->
-            <p class="project-summary">Developed a cross-platform mobile app using the Expo framework for ReactNative to assist users in determining and understanding 3-D stereo camera settings while in the field. Created internal documentation in support of the app publication process and future product updates.</p>
+        
+            <section class="project-images">
+                <img class="project-image" src="./project-images/english_homepage2.png" alt="A screenshot of the homepage of the website prototype. A green banner across the top contains the logo of a plant between two rivers coming together, the title of the project, and the main navigation menu. Below that is a short about section for the project, quick links to the different garden guides, and links to more about the project background, history, references, and resources.">
+                <img class="project-image" src="./project-images/english_gardenguide.png" alt="An example of the top of one of the garden guides. There is a short overview at the top of the page, followed by a couple example images. Then there is a 'Top Considerations' section where users can click through the most important things to think about when starting this garden, and a 'Best In Show Veggies' section with some options for what would do best in this type of garden.">
+                <img class="project-image" src="./project-images/english_foodinsecurity.png" alt="The top portion of the page about food insecurity in Pittsburgh. There are two sections shown: 'What is Food Insecurity?' and 'Food Apartheid'. Under 'Food Apartheid', a political cartoon and a map of Pittsburgh are used to help illustrate the concept.">
+            </section>
+
+            <p class="project-summary">As a capstone for the Digital Narrative and Interactive Design major, this project was intended to represent what I have learned from all aspects of the major. For the main deliverable, I decided to prototype a website using Figma. I had never been able to individually work through the entire prototyping process, nor create a website that was entirely my own design, so I wanted to challenge myself to do that for this project.</p>
+            <p class="project-summary">I have always been very passionate about sustainability and finding small ways that anyone can contribute. But sustainability as a whole is a massive scope that I wouldn't be able to do justice to with only one semester of work, so I focused my attention on one aspect: food systems. I originally planned to focus more on the environmental un-sustainability of food systems and talk about topics such as food miles, but I realized that the economic side of food systems felt more impactful to talk about and like something that more people would actually connect to. The economic side of food insecurity is more about food deserts and lack of access to nutritious foods. I originally wanted to talk about this topic on a nationwide scale, but as I looked more into the history of how food deserts were created, and how often it was linked to systemic racism or classism, the scope once again became too large. In the end, I focused on food insecurity in the city of Pittsburgh.</p>
+            <p class="project-summary">There were three main parts of the project that went into the website. The bulk of the website is the garden guides, of which there are four types: countertop, patio, backyard, and community. Each guide includes information on the pros and cons of the garden type, the most important considerations of whether the garden is realistic for you, what produce can be grown best, and step by step instructions for how to develop it. Through my research about gardens, there often seemed to be an "all or nothing" attitude about what you "need" to do for a garden to be successful, which can make them feel inaccessible to first time gardeners or people who genuinely cannot invest what those guides are asking of them. I wanted the guides for my project to be more gentle and say that while there are some things that can be done to make a garden "better," that isn't the only way to do it.</p>
+            <p class="project-summary">The second portion of the website is a quiz to help people figure out what garden type is best for them. The quiz consists of seven multiple choice questions, each contributing to a score for a garden type. As someone who hasn't dealt with major food insecurity, it was important that this quiz and website didn't feel prescriptive. I didn't want to be some random person showing up and telling people the "best way" to act within their own lives. Because of this, I decided at the end of the quiz to simply show the scores for the garden types, but still allow users to choose which page to go to in the end. The primary purpose of the quiz was to provide a recommendation to make the process of deciding a garden less overwhelming for people, not add stress by making people feel like they only have one option.</p>
+            <p class="project-summary">The final portion of the website is dedicated to the history of Pittsburgh and how the current state of food insecurity developed. This part of the website talks about redlining practices in Pittsburgh neighborhoods that determined where people were allowed to live, and how that impacted economic development and the placement of grocery stores. This portion of the website is primarily for a secondary audience who may not be dealing with food insecurity themselves to help educate them on why a resource like this is needed. There are also links to local resources and initiatives if people would like to get involved, or as alternatives to creating their own gardens.</p>
+            <p class="project-summary">Looking back, there are a couple ways I would improve this project. First, for accessibility, I would add a distinction other than color to differentiate features. I used a color palette checker to reach minimum WCAG contrast standards, but I would make sure there were additional indicators such as size change or bolding text when something is overed over. I also received feedback that some of the menus are confusing, which would be easy to update and clarify navigation.</p>
+
+
+            <ul class="project-skills">
+                <li class="project-skill">Figma</li>
+                <li class="project-skill">Research</li>
+                <li class="project-skill">Writing</li>
+                <li class="project-skill">Protoyping</li>
+            </ul>
+
+            <a class="project-link" href="https://www.figma.com/proto/nhwBrUL9mGk96HmBg29j2S/DNID-Capstone-Prototype-v2?node-id=0-1&t=xHnq3pCEmZi1riG9-1">Figma protoype link</a>
+            <a class="project-link" href="https://www.figma.com/design/nhwBrUL9mGk96HmBg29j2S/DNID-Capstone-Prototype-v2?node-id=0-1&m=dev&t=xHnq3pCEmZi1riG9-1">Figma Dev Mode link</a>
+        </section>
+
+        <section class="project">
+            <h3 class="project-title">ProdUse</h3>
+            <p class="project-date-class"><strong>August 2024 - December 2024</strong> | Digital Narrative and Interactive Design Computer Science Capstone</p>
+            <ul class="project-categories">
+                <li class="project-category">App Development</li>
+                <li class="project-category">Prototyping</li>
+            </ul>
+        
+            <section class="project-images">
+                <img class="project-image" src="./project-images/cs_homepage.png" alt="A screenshot of the homepage of the app. At the top of the screen, there is a green header with a button for 'filters', the title of the page 'My Fridge' and a 'plus' button to add new items to the fridge. Below the beader, there is a search bar. The main portion of the screen shows three items in the user's fridge: strawberries, broccoli, and apples. Each item has an image, a percentage bar and number telling the user how much of the item they've used, and buttons to delete the item or 'see more'. At the bottom of the screen is a navigation bar for the 'My Fridge' page or the 'Metrics' page. The 'My Fridge' icon on the menu is currently highlighted.">
+                <img class="project-image" src="./project-images/cs_itemdetails.png" alt="A screenshot of the item details page of the app. At the top of the screen is a 'back' button to return to the 'My Fridge' screen, and a pen icon button to edit the item. Below that, there is an image of the item, and its name, purchase date, number of days its been in the fridge, and how much of it has been used. Next is a section that includes possible ways to use the item in different recipes. Finally, there is a row of buttons to 'Throw Out' the item, find 'Recipes' for the item, or 'Use Item.'">
+                <img class="project-image" src="./project-images/cs_metrics.png" alt="A screenshot of the metrics page of the app. A green header bar says 'Usage' at the top of the screen. The main portion fo teh page contains colorful tiles showing how many items have been logged, the most and least used categories, and the most and least purchased categories of items. Finally, there are achievement badges users can earn by using the app displayed here. At the bottom of the screen is a navigation bar with 'My Fridge' and 'Metrics' tabs. The 'Metrics' tab is currently highlighted.">
+            </section>
+
+            <p class="project-summary">This project was the second portion of the capstone for the Digital Narrative and Interactive Design major, focused on the computer science side of the program. I wanted to do a different project to my previous capstone, but still relate them thematically. So, I conceptualized an app designed to help people reduce food waste. The app is a cross-platform mobile app where users can log the food they buy and track their usage of it. The app keeps track of what has been logged over time and provides user's with stats about their percentage of food waste over time, what items typically go to waste, and what they more reliably will use up. This helps users gain awareness about their food waste, can help people remember what is still in their fridge, and inform better purchases in the future. The app was developed using Expo, SQLite was used for the backend database, and prototyping was completed in Figma.</p>
+            <p class="project-summary">I served as group leader for this project. My main priorities were ensuring clear communication between the design and development teams, delegating tasks, and providing support where other group members required it. I also worked on the database and backend integration, as I had the most prior experience in those areas.</p>
+            <p class="project-summary">The main page of the app shows a users "fridge," with an entry for each item they currently have logged and how much of the item they've used up. User's are able to search for specific items, sort the items, or filter them. Clicking on an item shows more details about it, and users are also able to edit this information if something was entered incorrectly. There are also separate buttons if a user needs to edit how much of the item they've used up, or if they need to throw out the item before they've finished it. From the bottom navigation bar, users can also look at their stats, which shows them badges based on their usage of the app and information about their food waste.</p>
+            <p class="project-summary">We carefully monitored the scope of the project to ensure that the components included in our final deliverable would all be functional. If the project were expanded, we would have liked to include a machine learning component to allow people to simply scan their grocery receipt and automatically log items. We also did not include individual icons for every item, and we instead grouped them into categories. A member of our team created all of the icons herself, so it was unrealistic to develop an icon for every possible item that could be logged. The current stats included in the app are not very detailed, so ideally this page would be expanded upon. Finally, fully utilizing the accessibility features of ReactNative to ensure the app was as usable as possible would be a really valuable improvement to the app. Most members of the team had no prior experience with the technical skills required for the project, so the final scope of the app also reflects the growth each team member went through during development.</p>
+            <p class="project-summary">Throughout the course of this project, we tested the app using the Expo simulator on our phones. As Expo is continuously updating and the project has not been maintained, we do not guarantee that the app will work with the latest version of Expo or the simulator.</p>
+
+
             <ul class="project-skills">
                 <li class="project-skill">JavaScript</li>
                 <li class="project-skill">ReactNative</li>
                 <li class="project-skill">Expo</li>
+                <li class="project-skill">Project Management</li>
             </ul>
+
             <a class="project-link" href="https://github.com/e-brent/Mercury-Mobile-App">Link to GitHub repository</a>
         </section>
 
